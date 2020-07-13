@@ -21,12 +21,12 @@ class Vector{
 		~Vector(){
 			if(buff) delete[] buff;
 		}
-	//	iterator begin(){
-	//		return buff;
-	//	}
-		//iterator end(){
-		//	return buff+num;
-	//	}
+		iterator begin(){
+			return buff;
+		}
+		iterator end(){
+			return buff+num;
+		}
 		void reserve(unsigned int newcap){
 			if(newcap < cap) return;
 			T *temp = new T[newcap];
