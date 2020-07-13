@@ -1,16 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-set<string> S;
+map<string,bool> D;
 void lietke(string x){
-	S.insert(x);
+	if(D[x]) return;
+	D[x]=true;
 	if(x.length()==1) return;
 	lietke(x.substr(0,x.length()-1));
 	lietke(x.substr(1,x.length()-1));
 }
 int main ()
 {
-  lietke("banana");
-  for(auto s:S) cout<<s<<"\n";
-  return 0;
+	string x;
+	cin>>x;
+  	lietke(x);
+  	for(auto z:D) cout<<z.first<<"\n";
+  	return 0;
 }
 

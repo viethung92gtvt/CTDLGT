@@ -1,0 +1,7 @@
+4
+Ha Noi 3 - 0 Ha Nam
+Thua Thien - Hue 2 - 2 Tp Ho Chi Minh
+Ha Nam 4 - 1 Thua Thien - Hue
+Tp Ho Chi Minh 0 - 0 Ha Noi
+Ha Noi 1 - 2 Thua Thien - Hue
+Ha Nam 2 - 3 Tp Ho Chi Minh
