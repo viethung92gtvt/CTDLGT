@@ -8,14 +8,14 @@ int main ()
 	int n;
 	cin>>n;
 	for(int i=2;i<=n;i++){
-		int t=0;
+		int nho=0;
 		for(auto &v:V){
-			t+=v*i;
-			v=t%10;
-			t=t/10;
+			nho+=v*i;
+			v=nho%10;
+			nho=nho/10;
 		}
-		while(t) {
-			V.push_back(t%10);t/=10;
+		while(nho) {
+			V.push_back(nho%10);nho/=10;
 		}
 	}
 	for(vector<int>::reverse_iterator it=V.rbegin();it!=V.rend();it++){
