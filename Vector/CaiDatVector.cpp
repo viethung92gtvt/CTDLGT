@@ -8,7 +8,7 @@ class Vector{
 		typedef T *iterator;
 		Vector(){
 			cap=0;num=0;buff=NULL;
-		}
+		} 
 		Vector(unsigned int C){
 			cap=C;
 			num=0;
