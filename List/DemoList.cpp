@@ -1,4 +1,4 @@
-//Demo list
+//Demo slist
 #include <bits/stdc++.h>
 #include "slist.cpp"
 using namespace std;
