@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
-#include "list\slist.cpp"
+#include "dlist\\dlist.cpp"
 
 using namespace std;
 int main ()
 {
   int n,k,x;
-  slist<int> L;//Luu vi tri theo gia tri giam dan dang xet
+  dlist<int> L;//Luu vi tri theo gia tri giam dan dang xet
   cin>>n>>k;
   vector<int> a(n+5);
   for(int i=1;i<=n;i++) cin>>a[i];

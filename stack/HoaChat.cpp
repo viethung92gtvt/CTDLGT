@@ -1,0 +1,26 @@
+//Cong thuc hoa hoc
+#include <bits/stdc++.h>
+using namespace std;
+map<char,int> K={{'C',12},{'H',1},{'O',16},{'(',0}};
+int main ()
+{
+  string x="((CHOH)2(COOH)2H2O)4";
+  stack<int> S;
+  for(auto c:x){
+  	if(K.find(c)!=K.end()) S.push(K[c]);
+  	else if(c==')'){
+  		int t=0;
+  		while(S.top()){
+  			t+=S.top();S.pop();
+		}
+		S.pop();
+		S.push(t);
+	  }
+	  else S.top()*=c-'0';
+  }
+  int t=0;
+  while(S.size()) {t+=S.top(); S.pop();}
+  cout<<t;
+  return 0;
+}
+
