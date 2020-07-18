@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-char x[]="dsd";
-scanf("%s",&x);
-cout<<x;
+	long long res=1;
+	res=1LL<<1;
+	cout<<res;
 }
 
 

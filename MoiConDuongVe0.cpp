@@ -13,8 +13,11 @@ LL zero(int n){
 	return D[n];
 }
 int main(){
-	int x=1000;
-	cout<<zero(x);
+	int t;
+	cin>>t;
+	int a[t+5];
+	for(int i=1;i<=t;i++) cin>>a[i];
+	for(int i=1;i<=t;i++) cout<<zero(a[i])<<endl;
 }
 
 

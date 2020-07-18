@@ -15,7 +15,11 @@ int main(){
 		for(int j=1;j<i;j++){
 			if(phanung[{i,j}]==1||phanung[{j,i}]==1) {
 				nguyhiem*=2;
+<<<<<<< HEAD
+				//break;	
+=======
 				break;	
+>>>>>>> bcc03ee43c79cc6bbcba4dfafb277f8e35c8bb6a
 			}
 		}
 	}
