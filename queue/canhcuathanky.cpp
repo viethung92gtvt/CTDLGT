@@ -16,15 +16,18 @@ int main ()
 //	}
 //	cout<<Q.front();  
 //Cach 2
-queue<pair<string,int>> Q;
-	for(auto x:ds) Q.push({x,1});
-	cin>>n;
-	while(n>Q.front().second){
+	int t,a[10005];
+	cin>>t;
+	for(int i=1;i<=t;i++) cin>>a[i];
+	for(int i=1;i<=t;i++){
+		queue<pair<string,int>> Q;
+		for(auto x:ds) Q.push({x,1});
+		while(a[i]>Q.front().second){
 		Q.push({Q.front().first,Q.front().second*2});
-		n-=Q.front().second;
+		a[i]-=Q.front().second;
 		Q.pop();
 	}
-	cout<<Q.front().first;
-  return 0;
+	cout<<Q.front().first<<endl;
+	}
 }
 

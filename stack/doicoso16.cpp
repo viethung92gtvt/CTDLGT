@@ -2,7 +2,7 @@
 using namespace std;
 int main ()
 {
-	int n;cin>>n;
+	unsigned int n;cin>>n;
 	char HEX[] = "0123456789ABCDEF";
 	stack<char> S;
 	while(n){

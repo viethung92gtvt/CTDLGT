@@ -12,7 +12,7 @@ class dlist{
 		typedef dlist_iterator<T> iterator;
 		typedef dlist_reverse_iterator<T> reverse_iterator;
 		dlist(){num=0;head=tail=nullptr;}
-		dlist(int k,T x){num=0;head=tail=nullptr;while(k--) push_back(x);}//Tao list k pan tu bang x
+		dlist(int k,T x){num=0;head=tail=nullptr;while(k--) push_back(x);}//Tao list k phan tu bang x
 		bool empty(){ return num==0;}
 		unsigned size(){return num;}
 		reverse_iterator rbegin(){
@@ -61,6 +61,14 @@ class dlist{
 				head=head->getnext();
 				head->setprev(0);
 			}
+			num--;
+		}
+		void erase(iterator it)
+		{
+			if(it.getcurr()==head) return pop_front();
+			if(it.getcurr()==tail) return pop_back();
+			node<T>*L=it.getcurr()->getprev(),*R=it.getcurr()->getnext();
+			L->setnext(R); R->setprev(L);
 			num--;
 		}
 };
