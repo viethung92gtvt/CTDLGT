@@ -14,7 +14,6 @@ class Vector{
 		typedef Vector_reverse_iterator<T> reverse_iterator;
 		Vector(){
 			cap=0;num=0;buff=NULL;
-			cout<<"dsds";
 		}
 		Vector(unsigned int C){
 			cap=C;
@@ -119,13 +118,13 @@ class Vector_reverse_iterator{
 		}
 };
 #endif
-int main ()
-{
-  Vector<int> V(10);cout<<V.size(); 
-  for(int i=1;i<=10;i++) V.push_back(i*i);
-  cout<<"\nCac phan tu: "; for(auto x:V) cout<<x<<" ";
-  cout<<endl;
-  int dem=0;
-  for(Vector<int>::reverse_iterator rit=V.rbegin();rit!=V.rend(); ++rit) cout<<*rit<<" ";
-  return 0;
-}
+//int main ()
+//{
+//  Vector<int> V;
+//  for(int i=1;i<=10;i++) V.push_back(i*i);
+//  cout<<"\nCac phan tu: "; for(auto x:V) cout<<x<<" ";
+//  cout<<endl;
+//  int dem=0;
+//  for(Vector<int>::reverse_iterator rit=V.rbegin();rit!=V.rend(); ++rit) cout<<*rit<<" ";
+//  return 0;
+//}

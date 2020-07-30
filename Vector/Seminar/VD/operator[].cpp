@@ -1,10 +1,11 @@
 // vector::operator[]
 #include <bits/stdc++.h>
 #include <vector>
+#include "arrayvector.cpp"
 using namespace std;
 int main ()
 {
-  vector<int> myvector (10);   // 10 zero-initialized elements
+  Vector<int> myvector(10);   // 10 zero-initialized elements
   int size = myvector.size();
   // assign some values:
   for (unsigned i=0; i<size; i++) myvector[i]=i;
