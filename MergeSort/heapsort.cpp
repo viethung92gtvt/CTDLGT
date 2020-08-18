@@ -22,7 +22,7 @@ int main ()
 {
   double a[] = {3.5, 1.2, 4.7, 6.3, 1.8, 8.2, 5}, b[10000];
   int n = sizeof(a)/sizeof(double);
-  heapsort<double>(a,a+n,ss);
+  heapsort<double>(a,a+n);
   for(auto x:a) cout<<x<<" ";
   return 0;
 }

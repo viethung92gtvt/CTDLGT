@@ -21,7 +21,7 @@ bool ss(sv u,sv v){
 }
 struct lop{
 	vector<sv> A;
-	void readfile(FILE *f=stdin){
+	void readfile(FILE *f){
 		char t[100],g[100];
 		int d,m,y,id=0;
 		while(!feof(f)){
@@ -40,9 +40,9 @@ struct lop{
 int main ()
 {
   lop C;
- // FILE *f= fopen("sv.txt","r");
-  C.readfile();
-  //fclose(f);
+  FILE *f= fopen("sv.txt","r");
+  C.readfile(f);
+  fclose(f);
   C.Sort();
   C.out();
   return 0;

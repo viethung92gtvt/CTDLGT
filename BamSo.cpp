@@ -7,7 +7,4 @@ int main(){
 	for(auto x:xau) tong+=x-48;
 	tong=tong%9?tong%9:9;
 	cout<<tong;
-	
 }
-
-

@@ -43,11 +43,10 @@ int main ()
 {
 	
   TG T;
-  ifstream fin("diem.txt");
+  ifstream fin("diemIN.txt");
   fin>>T;
- // cout<<T;
- // ofstream fout("diem2.txt",fout.app);
- freopen("data.txt","w",stdout);
+  cout<<T;
+ freopen("diemOUT.txt","w",stdout);
   cout<<"Chu vi "<<T.chuvi();
   cout<<"Dien tich "<<T.dientich();
   //cin>>M>>N;//phai co return is de co the cin lien tuc tren 1 cau lenh

@@ -28,13 +28,9 @@ int main ()
 {
 	FILE *f = fopen("sinhvienMarathon.txt","r");
 	sv listSV[201];
-	readfile(stdin,listSV);
+	readfile(f,listSV);
 	sort(listSV,listSV+n,ssDiem);
-	//List SV Sau khi SV
 	int i;
-//	for(i=0;i<n;i++){
-//	cout<<listSV[i].ht<<" "<<listSV[i].diem<<" "<<listSV[i].khoa<<endl;
-//	}
 	int Giai[4],dem=0,vtriKhac=-1;
 		for(i=0;i<n&&(dem<=3|| vtriKhac==-1);i++){
 		if(strcmp(listSV[i].khoa,"DDT")==0) {

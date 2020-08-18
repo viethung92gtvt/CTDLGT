@@ -10,7 +10,7 @@ int main () {
 int i=5, j=6, k;
 long l=10, m=5, n;
 k = GetMax(i,j);
-n = GetMax(l,m); 
+n = GetMax(l,i); 
 cout << k << endl;
 cout << n << endl;
 return 0; 

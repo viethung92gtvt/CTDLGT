@@ -24,9 +24,9 @@ bool ss(double u, double v){ return u>v;}
 
 int main ()
 {
-  double a[] = {3.5, 1.2, 4.7, 6.3, 1.8, 8.2, 5}, b[10000];
+  double a[] = {3.5, 1.2, 4.7, 6.3, 1.8, 8.2, 5};
   int n = sizeof(a)/sizeof(double);
-  quicksort<double>(a,a+n,ss);
+  quicksort<double>(a,a+n);
   for(auto x:a) cout<<x<<" ";
   return 0;
 }
