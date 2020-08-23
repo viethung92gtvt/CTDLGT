@@ -7,9 +7,11 @@ int main ()
   list<int> L(1,1);
   cin>>n;
   for(int i=2;i<=n;i++){
+  	cout<<"\n i = "<<i<<": ";
   	unsigned long long nho=0;
   	for(auto z=L.rbegin();z!=L.rend();z++){
   		nho=nho+*z*i;
+  		cout<<"\n nho = "<<nho<<"z ="<<*z;
   		*z = nho%10;
   		nho/=10;
 	  }

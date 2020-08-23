@@ -17,10 +17,12 @@ void Merge(T *A,int left,int mid, int right){
 }	
 template <class T>
 void MergeSort(T *A,int left,int right){
-	int mid =(left+right)/2;
-	MergeSort(A,left,mid);//goi de quy trai
-	MergeSort(A,mid+1,right);//goi de quy phai
-	Merge(A,left,mid,right);
+	if(left < right){
+		int mid =(left+right)/2;
+		MergeSort(A,left,mid);//goi de quy trai
+		MergeSort(A,mid+1,right);//goi de quy phai
+		Merge(A,left,mid,right);
+	}
 }
 int main ()
 {

@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+//Ham ve mot vach 
 void drawonetick(int ticklength, int ticklabel=-1){
-	cout<<"    ";  
 	for(int i=0;i<ticklength; i++)
 		cout<<"-";
 	if(ticklabel>=0) 
 		  cout<<" "<<ticklabel;
 	cout<<"\n";
 }
-//Hàm v? m?t don v? c?a thu?c
+//Hàm ve mot don vi cua thuoc
 void drawticks(int ticklength){
 	if(ticklength>0){
 		drawticks(ticklength-1);
@@ -16,7 +16,11 @@ void drawticks(int ticklength){
 		drawticks(ticklength-1);
 	}
 }
-//Hàm v? c? thu?c
+//Hàm ve toan bo thuoc
+/*
+ninches: chieu dai thuoc
+majorlength: Chieu dai vach ke chinh
+*/
 void drawruler(int ninches, int majorlength){
 	drawonetick(majorlength,0);
 	for(int i=1; i<= ninches; i++){
@@ -26,7 +30,7 @@ void drawruler(int ninches, int majorlength){
 }
 
 int main(){
-     drawruler(6,5);
+     drawruler(6,3);
 
 }
 
