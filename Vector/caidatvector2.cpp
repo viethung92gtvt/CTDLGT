@@ -7,7 +7,7 @@ class Vector_reverse_it{
 		T *curr;//Vi tri hien tai dang duyet
 	public:
 		Vector_reverse_it(T *c=0){
-			curr = 0;
+;			curr = c;
 		}
 		T *getCurr(){return curr;}
 		T &operator*(){return *curr;}
@@ -78,8 +78,9 @@ class Vector{
 int main ()
 {
   Vector<int> V(6,5);
-  for(int i=0;i<V.size();i++) cout<<V[i]<<" ";
-  cout<<"\nDuyet xuoi: ";for(Vector<int>::iterator it=V.begin();it!=V.end();it++){
+  for(int i=0;i<V.size();i++) V[i]=i;
+  cout<<"\nDuyet xuoi: ";
+  for(Vector<int>::iterator it=V.begin();it!=V.end();it++){
   	cout<<*it<<" ";
   }
   V.pop_back();
@@ -89,8 +90,7 @@ int main ()
   V.erase(V.begin()+2);
   cout<<"\nDuyet auto: ";for(auto v:V) cout<<v<<" ";
   cout<<"\nDuyet nguoc: ";
-  for(Vector<int>::reverse_iterator it=V.rbegin();it!=V.rend();it++)
-cout<<*it<<" ";
+  for(Vector<int>::reverse_iterator it=V.rbegin();it!=V.rend();++it) cout<<*it<<" ";
   return 0;
 }
 
