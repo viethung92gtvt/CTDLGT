@@ -11,7 +11,10 @@ int main ()
 			x = mem%10;
 			mem/=10;
 		}
-		for(;mem!=0;mem/=10) V.push_back(mem%10);
+		while(mem!=0){
+			 V.push_back(mem%10);
+			 mem /=10;
+		}
 	}  
 	//for(auto it=V.rbegin();it!=V.rend();it++) cout<<*it;
 	reverse(V.begin(),V.end());//Dao nguoc vector
