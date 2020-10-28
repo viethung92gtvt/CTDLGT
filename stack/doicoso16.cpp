@@ -6,7 +6,7 @@ int main ()
 	char HEX[] = "0123456789ABCDEF";
 	stack<char> S;
 	while(n){
-		S.push(HEX[n%16]); n/=16;
+		S.push(HEX[n%16]); n/=16;//n>>=4;
 	}
 	while(S.size()) {cout<<S.top(); S.pop();
 	}

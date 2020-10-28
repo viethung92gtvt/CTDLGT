@@ -63,6 +63,16 @@ class dlist{
 			}
 			num--;
 		}
+		void insert(iterator it,T x){
+			node<T> *p = it.getcurr();
+			if(p==head) return push_front(x);
+			node<T> *q = p->getprev();
+			node<T> r(x,q,p);
+			cout<<"test"
+			p->setprev(&r);
+			q->setnext(&r);
+			num++;
+		}
 		void erase(iterator it)
 		{
 			if(it.getcurr()==head) return pop_front();

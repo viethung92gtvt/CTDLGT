@@ -8,6 +8,7 @@ class node{
 	node *next;
 	public:
 		node(){
+			next  = NULL;
 		}
 		node(T x,node<T> *N=NULL){
 			elem =x;
@@ -27,14 +28,19 @@ class node{
 		}
 };
 #endif
-/*int main ()
+int main ()
 {
   node<int> A,B(1),C(2,&B);
   B.setnext(&A);
-  A.getelem() = 3;
-  cout<<A.getelem()<<"\n";
+  A.setelem(3);
   node<int> *D = new node<int>(4,&C);
-  cout<<"\n"<<D->getelem();
+//  cout<<A.getelem()<<"\n";
+//  cout<<B.getelem()<<"\n";
+//  cout<<C.getelem()<<"\n";
+//  cout<<D->getelem()<<"\n";
+for(node<int> *it = D; it!=NULL;it=it->getnext())
+	cout<<it->getelem()<<"\t";
+
    return 0;
-}*/
+}
 

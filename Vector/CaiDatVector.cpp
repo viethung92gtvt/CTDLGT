@@ -89,6 +89,13 @@ int main ()
 {
   Vector<int> V;
   for(int i=1;i<=10;i++) V.push_back(i*i);
-  cout<<"\nCac phan tu: "; for(auto x:V) cout<<x<<" ";
+  
+  //Vector<int>::iterator it = V.begin();
+  int *it = V.begin();
+  for(;it!=V.end();it++)
+  cout<<*it<<" ";
+  
+  
+  //cout<<"\nCac phan tu: "; for(auto x:V) cout<<x<<" ";
   return 0;
 }

@@ -20,7 +20,7 @@ int main ()
   }
   int t=0;
   while(S.size()) {t+=S.top(); S.pop();}
-  cout<<t;
+  cout<<"Khoi luong "<<x<<" la: "<<t;
   return 0;
 }
 
