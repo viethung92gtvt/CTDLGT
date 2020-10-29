@@ -6,8 +6,8 @@ using namespace std;
 template<class T>
 class node{
 	private:
-	T elem;//Gia tri cua node
-	node<T> *next;//Chua dia chi node tiep theo
+		T elem;//Gia tri cua node
+		node<T> *next;//Chua dia chi node tiep theo
 	public:
 		node<T>(){next = NULL;}//Ham tao khong doi
 		node<T>(T x,node<T> *N=0){//Ham tao co doi

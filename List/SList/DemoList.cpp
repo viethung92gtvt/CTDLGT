@@ -2,9 +2,10 @@
 #include <bits/stdc++.h>
 #include "slist.cpp"
 using namespace std;
-int main ()
+int main()
 {
 	slist<int> L(10,1);
+
 	for(auto x:L) cout<<x<<" ";  
 	slist<int>::iterator it;
 	cout<<"\nDuyet bo lap xuoi: "; for(it=L.begin();it!=L.end();it++) cout<<*it<<" ";

@@ -15,6 +15,7 @@ class slist{
 			num=0;
 		}
 		slist(int k, T x){
+			num=0;
 			while(k--){
 				push_back(x);
 			}
@@ -38,14 +39,19 @@ class slist{
 		void push_front(T x){
 			//TH1: Neu danh sach chua co gi
 			if(num==0) head=trail=new node<T>(x);
-			else head=new node<T>(x,head);
+			else {
+				head = new node<T>(x,head);
+			}
 			num++;
 		}
 		void pop_front(){
 			if(num==0) return;
-			head=head->getNext();
+			if(num==1){
+				head=trail=0;
+			}else{
+				head = head->getNext();
+			}
 			num--;
-			if(num==0) trail=NULL;
 		}
 		void pop_back(){
 			if(num==0) return;
@@ -59,9 +65,16 @@ class slist{
 			}
 			num--;
 		}
+		
 		typedef slist_iterator<T> iterator;
 		iterator begin(){return head;}
-		iterator end(){return trail->getNext();}
+		iterator end(){return NULL;}
+//		void insert(iterator it, T x){
+//			if(num==1) push_front()
+//			node<T> *x = it.getcurr();
+//			node<T> *prev = 
+//		}
+		
 };
 #endif
 //int main ()
