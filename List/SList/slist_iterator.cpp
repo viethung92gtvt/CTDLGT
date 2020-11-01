@@ -16,11 +16,11 @@ class slist_iterator{
 		bool operator!=(slist_iterator<T> it1){
 			return curr!=it1.getcurr();
 		}
-		slist_iterator<T> operator++(int){//++it
+		slist_iterator<T> operator++(int){//it++
 			curr=curr->getNext();
 			return curr;
 		}
-		slist_iterator<T> operator++(){//it++
+		slist_iterator<T> operator++(){//++it
 			slist_iterator<T> it1 = curr;
 			curr = curr->getNext();
 			return it1;
@@ -33,7 +33,14 @@ class slist_iterator{
 //	node<int> *A =  new node<int>(7,&N);
 //	node<int> *B =  new node<int>(6);
 //	N.setNext(B);
-//	slist_iterator<int> it=A;//it(A)
-//	for(;it!=0;it++) cout<<*it<<" ";//Duyet
+//	cout<<"\nDia chi con tro A: "<<A<<endl;
+//	cout<<"\Gia tri elem cua A la: "<<A->getElem();
+//	slist_iterator<int> it;//it(A)
+//	cout<<"\nDia chi con tro curr cua it: "<<it.getcurr()<<endl;
+//	it=A;
+//	cout<<"\nDia chi con tro curr cua it sau khi gan: "<<it.getcurr()<<endl;
+//	cout<<"\nGia tri elem ma con tro curr cua it dang tro: "<<it.getcurr()->getElem()<<endl;
+////	slist_iterator<int> null(NULL);
+//	for(;it!=NULL;++it) cout<<*it<<" ";//Duyet
 //}
 
