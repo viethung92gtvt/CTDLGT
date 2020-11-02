@@ -24,10 +24,15 @@ class node{
 //
 //int main(){
 //	node<int> N(2);
-//	cout<<N.getelem();
 //	node<int> *A = new node<int>(7,0,&N);
 //
 //	node<int> C(8,A,0);
 //	node<int> *B = new node<int>(6,A,&C);
-//	cout<<B->getnext()->getelem();
+//	node<int> *p=A;
+//	while(p!=NULL){
+//
+//		cout<<p->getelem()<<" ";
+//		p=p->getnext();
+//	}
+//
 //}
