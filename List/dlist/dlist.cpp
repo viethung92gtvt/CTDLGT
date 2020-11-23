@@ -82,22 +82,22 @@ class dlist{
 		}
 };
 #endif
-//int main(){
-//	dlist<int> L;
-//	L.push_back(5);
-//	L.push_back(6);
-//	L.push_back(7);
-//	L.push_front(1);
-//	L.push_front(2);
-//	L.push_front(3);
-//	dlist<int>::iterator k=L.begin();
-//	k++;k++;
-//	L.erase(k);
-//	//k=L.begin();
+int main(){
+	dlist<int> L; cout<<"L init: num = "<<L.size()<<" head = "<<L.gethead()<<" trail = "<<L.gettrail()<<endl;
+	L.push_back(5);
+	L.push_back(6);
+	L.push_back(7);
+	L.push_front(1);
+	L.push_front(2);
+	L.push_front(3);
+	dlist<int>::iterator k=L.begin();
+	k++;k++;
+	L.erase(k);
+	k=L.begin();
 //	//k++;k++;
-//	L.insert(++k,9);
-//	cout<<"\Duyet xuoi: ";
-//	for(dlist<int>::iterator it=L.begin();it!=L.end();it++) cout<<*it<<" ";
+	L.insert(k,9);
+	cout<<"\nDuyet xuoi: ";
+	for(dlist<int>::iterator it=L.begin();it!=L.end();it++) cout<<*it<<" ";
 //	cout<<"\nDuyet nguoc: ";
 //	for(dlist<int>::reverse_iterator rit=L.rbegin();rit!=L.rend();rit++) cout<<*rit<<" ";
-//}
+}

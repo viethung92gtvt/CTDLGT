@@ -26,9 +26,9 @@ class node{
 //	node<int> N(2);
 //	node<int> *A = new node<int>(7,0,&N);
 //
-//	node<int> C(8,A,0);
+//	node<int> C(8,A,A);
 //	node<int> *B = new node<int>(6,A,&C);
-//	node<int> *p=A;
+//	node<int> *p=B;
 //	while(p!=NULL){
 //
 //		cout<<p->getelem()<<" ";

@@ -10,9 +10,6 @@ class dlist_iterator
 	public:
 		dlist_iterator(node<T> *c=0){curr=c;}
 		node<T> *getcurr(){return curr;}
-//		dlist_iterator &operator=(dlist_iterator<T> it){
-//			this->curr=it.getcurr(); return *this;
-//		}
 		bool operator!=(dlist_iterator<T> it){return curr!=it.getcurr();}
 		//Nap chong toan tu * de lay gia tri elem ma curr dang tro
 		T &operator*(){

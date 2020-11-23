@@ -12,7 +12,7 @@ class node{
 		elem = x;
 		next = N;
 	}
-	node<T> &getnext(){ return next;}
+	node<T> *&getnext(){ return next;}
 	T &getelem(){return elem;}
 };
 template<class T>
@@ -23,7 +23,7 @@ class STACK{
 		STACK(){num=0;H=nullptr;}
 		unsigned size(){return num;}
 		bool empty(){return num==0;}
-		T &top(){return H->elem;}
+		T &top(){return H->getelem();}
 		void pop(){
 			if(num<=1){num=0;H=nullptr;return;}
 			H=H->getnext();
