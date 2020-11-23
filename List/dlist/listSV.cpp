@@ -37,15 +37,9 @@ int menu(){
 int main ()
 {
 	dlist<sv> L;
-	int chon = menu();
-//	switch(chon){
-//		case 1:
-//			cout<<"A";
-//			break;
-//		default:
-//			break;
-//	}
-sv a;
+	int chon;
+	sv a;
+	while(chon=menu()){
 	switch(chon){
 		case 1:
 			//sv a;
@@ -62,8 +56,10 @@ sv a;
 			for(dlist<sv>::iterator x=L.begin();x!=L.end();x++) cout<<*x;
 			break;
 		case 4:
+			return 1;
 			break;
 	}
+}
 //	int n;
 //	cout<<"Nhap so luong SV: "; cin>>n;
 //	for(int i=1;i<=n;i++){
