@@ -22,7 +22,7 @@ public:
 	int isRoot(TreeNode<T>*v){
 		return v->getParent()==NULL;           
 	}
-		//Duyet Tien thu tu
+	//Duyet Tien thu tu
 	void preOrder(TreeNode<int> *Root,string p="\n"){
 				if(Root==0) return;
 				cout<<p<<Root->getElem();
@@ -63,37 +63,62 @@ public:
 		}
 		return 0;
 	}
+	//Them 1 nut vao cay
 	TreeNode<T>* insert(TreeNode<T> *parent,T elem){
      TreeNode<T>* p = new TreeNode<T> ;
      p->setParent(parent);
      p->setElem(elem);
-     parent->insertChild(p);
      if (parent==NULL)
         root = p;
+    else
+    	parent->insertChild(p);
      n++;
      return p;
 }
-//	void remove(TreeNode<T>*);
+	//Xoa 1 nut khoi cay
+	void remove(TreeNode<T> *v){
+		if(v!=NULL){
+			for(auto z:v->getChild()) 
+				remove(z);//Goi de quy xoa con cua v
+			if(v->hasChild())
+				v->getChild().clear();//Clear cac con cua v khoi danh sach Child cua v
+			TreeNode<T> *parent = v->getParent();//Lay dia chi nut cha cua v
+			if(parent!=NULL){//Neu v ko phai nut goc
+				for(auto z = parent->getChild().begin();z!= parent->getChild().end();z++)//Duyet cac nut con z cua parent
+				if(*z==v) {//Neu z la v thi xoa z khoi danh sach con cua parent
+					parent->getChild().erase(z);
+					break;
+				}
+			}
+			delete v;//Cuoi cung la` lá thì giai phong vung nho ma v tro den
+		}
+	}
 };
 int main ()
 {
-	 Tree<int> tree;
-      TreeNode<int> *p;
-	  //Tao cay
-	  p = tree.insert(NULL, 100);
-	  cout<<tree.size();
-//	  p = tree.insert(tree.getRoot(), 10);
-//	  tree.insert(p, 8);
-//	  tree.insert(p, 6);
-//      p = tree.insert(tree.getRoot(),20);
-//	  //Duyet cay
-//	  cout<<"\n Duyet theo thu tu truoc:";
-//	  tree.preOrder(tree.getRoot());
-//	  cout<<"\n Duyet theo thu tu giua:";
-//	  tree.inOrder(tree.getRoot());
-//	  cout<<"\n Duyet theo thu tu sau:";
-//	  tree.postOrder(tree.getRoot());
-	  
+	Tree<int> tree;
+	TreeNode<int> *p;
+	//Tao cay
+	tree.insert(NULL, 100);
+	TreeNode<int> *q;
+	q = tree.insert(tree.getRoot(), 20);
+	p = tree.insert(tree.getRoot(), 10);
+	TreeNode<int> *r;
+	r = tree.insert(p, 8);
+	tree.insert(p, 6);
+	tree.insert(q,30);
+//	tree.remove(q);
+	//Duyet cay
+	cout<<"\n Duyet theo thu tu truoc:";
+	tree.preOrder(tree.getRoot());
+	cout<<"\n Duyet theo thu tu giua:";
+	tree.inOrder(tree.getRoot());
+	cout<<"\n Duyet theo thu tu sau:";
+	tree.postOrder(tree.getRoot());
+	cout<<"\nChieu cao cua cay: "<<tree.high(tree.getRoot())<<endl;
+	//in duong di tu goc den la'
+//	cout<<"\nDuong di tu nut goc den nut 8: ";
+//	path(tree.getRoot(),q);
   return 0;
 }
 
