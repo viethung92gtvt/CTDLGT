@@ -10,6 +10,7 @@ int main ()
 			mem+=x*i;
 			x = mem%10;
 			mem/=10;
+			cout<<x;
 		}
 		while(mem!=0){
 			 V.push_back(mem%10);
