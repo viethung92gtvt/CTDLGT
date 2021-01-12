@@ -2,7 +2,7 @@
 using namespace std;
 int main ()
 {
-	int n=5;
+	int n=10;
 	vector<int> V(1,1);//Khoi tao 1 so 1
 	for(int i=2;i<=n;i++){
 		int mem=0;
@@ -16,9 +16,9 @@ int main ()
 			 mem /=10;
 		}
 	}  
-	//for(auto it=V.rbegin();it!=V.rend();it++) cout<<*it;
-	reverse(V.begin(),V.end());//Dao nguoc vector
-	for(auto x:V) cout<<x;
+	for(auto it=V.rbegin();it!=V.rend();it++) cout<<*it;
+	//reverse(V.begin(),V.end());//Dao nguoc vector
+//	for(auto x:V) cout<<x;
   return 0;
 }
 

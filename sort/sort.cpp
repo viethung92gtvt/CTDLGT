@@ -9,7 +9,11 @@ void Swap(T &a, T &b)
      a= b;
      b=tg;
 }
-
+template<class T>
+  void printArray(T *A,int n){
+  	for(int i =0;i<n;i++) cout<<A[i]<<" ";
+  	cout<<endl;
+  }
 template <class T>
 void Partition (T *A, int i, int j, int   &right)
 {
@@ -33,6 +37,7 @@ void Partition (T *A, int i, int j, int   &right)
       if(i<j)
       {
              Partition(a,i,j,k);
+            // printArray(a,8);
              QuickSort(a,i,k-1);
              QuickSort(a,k+1,j);
       }
@@ -125,16 +130,15 @@ void Pushdown (T *A, int i, int n)
 	     Pushdown(A,0,i-1);
      }
   } 
-  template<class T>
-  void printArray(T *A,int n){
-  	for(int i =0;i<n;i++) cout<<A[i]<<" ";
-  	cout<<endl;
-  }
+  
 int main ()
 {
 	int a[]={12,43  , 11  , 34   , 23  ,  43  ,  12 ,  435};
-	HeapSort(a,8);
-	printArray(a,8);
+//	int a[]={10,3,24,1,4,21,54,5};
+	int n = sizeof(a)/sizeof(int);
+	//QuickSort(a,0,n-1);
+HeapSort(a,n);
+	printArray(a,n);
   return 0;
 }
 
