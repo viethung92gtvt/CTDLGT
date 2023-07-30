@@ -1,30 +1,28 @@
 //cai dat node
-#include <bits/stdc++.h>
-#ifndef __node__cpp__
-#define __node__cpp__
+#include <iostream>
+#ifndef NODE_CPP
+#define NODE_CPP
 using namespace std;
 template<class T>
-class node{
+class Node{
 	private:
-		T elem;//Gia tri cua node
-		node<T> *next;//Chua dia chi node tiep theo
+		T elem;			//Doi tuong luu tru du lieu cua node
+		Node<T> *next;	//Con tro luu dia chi cua node tiep theo
 	public:
-		node<T>(){next = NULL;}//Ham tao khong doi
-		node<T>(T x,node<T> *N=0){//Ham tao co doi
+		Node<T>(T x,Node<T> *N=NULL){//Ham tao co doi mac dinh
 			elem = x;
 			next = N;
 		}
-		T &getElem(){ return elem;}
-		void setElem(T x){ elem = x;}
-		node<T> *&getNext(){return next;}
-		void setNext(node<T> *N){ next = N;}
+		T getElem(){ return elem;}				//Tra ve doi tuong luu tru du lieu cua Node
+		void setElem(T x){ elem = x;}			// Dat thay the doi tuong luu trong Node bang doi tuong moi
+		Node<T> *getNext(){return next;}		// Tra ve con tro luu dia chi cua Node tiep theo
+		void setNext(Node<T> *N){ next = N;}	// Gan gia tri con tro next bang gia tri N
 };
 #endif
-//int main(){
-//	node<int> N;
-//	N.getElem() = 2;
-//	node<int> *A =  new node<int>(7,&N);
-//	node<int> *B =  new node<int>(6);
-//	N.setNext(B);
-//	for(node<int> *p=A;p!=0;p=p->getNext()) cout<<p->getElem()<<" ";//Duyet
-//}
+int main(){
+	Node<int> N(2);
+	Node<int> *A =  new Node<int>(7,&N);
+	Node<int> *B =  new Node<int>(6);
+	N.setNext(B);
+	for(Node<int> *p=A;p!=0;p=p->getNext()) cout<<p->getElem()<<" ";//Duyet
+}

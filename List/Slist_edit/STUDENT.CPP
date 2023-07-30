@@ -1,7 +1,5 @@
 #ifndef STUDENT_CPP
-#define STUDENT_CPP 1
-#include"conio.h"
-#include"iostream"
+#define STUDENT_CPP
 using namespace std;
 class Student
 {

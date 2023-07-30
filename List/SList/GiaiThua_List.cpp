@@ -6,7 +6,7 @@ int main ()
   int d;//dem so so 0 tan cung cua n!
   list<int> L(1,1);
   cin>>n;
-  for(int i=2;i<=n;i++){
+  for(int i=n;i>1;i--){
   	cout<<"\n i = "<<i<<": ";
   	unsigned long long nho=0;
   	for(auto z=L.rbegin();z!=L.rend();z++){

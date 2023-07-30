@@ -1,5 +1,5 @@
 #ifndef SINGLE_LIST_ITR_H
-#define SINGLE_LIST_ITR_H 1
+#define SINGLE_LIST_ITR_H
 #include "slist.cpp"
 template <class T>
 class SingleListItr{

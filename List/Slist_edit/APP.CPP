@@ -1,5 +1,4 @@
 #include "conio.h"
-#include "stdio.h"
 #include "iostream"
 #include "Slist.cpp"
 #include "SLItr.cpp"

@@ -1,8 +1,6 @@
 #ifndef SINGLELIST_CPP
-#define SINGLELIST_CPP 1
+#define SINGLELIST_CPP
 #include "node.cpp"
-#include "iostream"
-
 using namespace std;
 template <class T>
 class SingleList{
@@ -148,3 +146,18 @@ template<class T>
 	return p;
  }
 #endif
+int main ()
+{
+SingleList<int> L;
+for(int i =1;i<=10;i++) L.insertLast(i);
+slist<int>::iterator it=L.begin();
+
+L.insert(it,0);
+L.erase(it);
+//node<int> *it = L.gethead();
+//for(;it!=NULL;it=it->getNext()) cout<<it->getElem();
+for(slist<int>::iterator it=L.begin();it!=L.end();it++) cout<<*it;
+
+  return 0;
+}
+
