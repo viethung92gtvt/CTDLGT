@@ -1,5 +1,4 @@
 ﻿#include"Node.cpp"
-//#include"slist_iterator.cpp"
 #ifndef slist_cpp
 #define slist_cpp
 using namespace std;
@@ -12,13 +11,7 @@ public:
 		SList(){					//Khoi tao list rong
 			header=trailer=NULL;
 			num=0;
-		}
-		SList(int k, Element e){			//Khoi tao list co k phan tu, moi phan tu bang x
-			num=0;
-			while(k--){
-				push_back(e);
-			}
-		}
+		} 
 		int size(){return num;}						//Tra ve so phan tu hien tai cua list
 		bool isEmpty(){return num==0;}				//Tra ve true neu list rong, flase neu list khac rong
 		
