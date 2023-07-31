@@ -5,6 +5,7 @@
 using namespace std;
 template<class T>
 class Node{
+	HIHI
 	private:
 		T elem;			//Doi tuong luu tru du lieu cua node
 		Node<T> *next;	//Con tro luu dia chi cua node tiep theo
