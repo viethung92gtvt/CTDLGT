@@ -25,7 +25,8 @@
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="SList.cpp" />
     <ClCompile Include="SList_Iterator.cpp" />
-    <ClCompile Include="TestSList.cpp" />
+    <ClCompile Include="Student.CPP" />
+    <ClCompile Include="StudentApp.CPP" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

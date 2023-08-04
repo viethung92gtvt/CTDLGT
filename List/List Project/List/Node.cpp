@@ -19,10 +19,12 @@ class Node{
 		void setNext(Node<Element> *N){ next = N;}	// Gan gia tri con tro next bang gia tri N
 };
 #endif
-int main() {
-	Node<int> N(2);
-	Node<int>* A = new Node<int>(7, &N);
-	Node<int>* B = new Node<int>(6);
-	N.setNext(B);
-	for (Node<int>* p = A; p != 0; p = p->getNext()) cout << p->getElem() << " ";//Duyet
-}
+//int main() {
+//	Node<int> N(2);
+//	Node<int>* A = new Node<int>(7, &N);
+//	Node<int>* B = new Node<int>(6);
+//	N.setNext(B);
+//	Node<int> C(10);
+//	B->setNext(&C);
+//	for (Node<int>* p = A; p != 0; p = p->getNext()) cout << p->getElem() << " ";//Duyet
+//}

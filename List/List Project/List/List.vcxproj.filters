@@ -29,7 +29,10 @@
     <ClCompile Include="SList_Iterator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestSList.cpp">
+    <ClCompile Include="Student.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentApp.CPP">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

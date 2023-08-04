@@ -1,2 +1,4 @@
-﻿SList.obj : error LNK2005: main already defined in Node.obj
-D:\Github\CTDLGT\CTDLGT\List\List Project\List\x64\Debug\List.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  Student.CPP
+StudentApp.obj : error LNK2005: "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class Student &)" (??5@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV01@AEAVStudent@@@Z) already defined in Student.obj
+StudentApp.obj : error LNK2005: "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Student)" (??6@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV01@VStudent@@@Z) already defined in Student.obj
+D:\Github\CTDLGT\List\List Project\List\x64\Debug\List.exe : fatal error LNK1169: one or more multiply defined symbols found

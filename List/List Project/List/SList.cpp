@@ -1,4 +1,4 @@
-﻿#include"Node.cpp"
+#include"Node.cpp"
 #ifndef slist_cpp
 #define slist_cpp
 using namespace std;
@@ -26,6 +26,21 @@ public:
 		void erase(Node<Element>* p);
 		void replace(Node<Element>* p, Element e);				// Thay the phan tu luu trong node do co dia chi luu trong p bang phan tu co gia tri e
 		Node<Element>* insertAfter(Node<Element>* p, Element e);// Chen them node sau node do p tro toi
+		void sort() {
+			Node<Element>* p = header;
+			Node<Element>* q;
+			while(p!=trailer){
+				 q = p->getNext();
+				while(q!=NULL){
+					if(p->getElem()>q->getElem()) {
+							Node<Element>*r = p;
+							Node<Element>*s = q;
+							r->setNext((s->getNext()));
+							
+					}
+				}
+			}
+		}
 
 };
 //----------------------------------------------

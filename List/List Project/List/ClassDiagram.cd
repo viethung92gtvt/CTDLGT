@@ -1,24 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Node&lt;Element&gt;">
-    <Position X="3.75" Y="0.5" Width="2.25" />
+    <Position X="0.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAACBAMAAAA=</HashCode>
       <FileName>Node.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SList&lt;Element&gt;">
-    <Position X="6.5" Y="0.5" Width="2.75" />
+    <Position X="3.25" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AEAAICUAABAAgAIAAIEIAAAAAAAAABAAAAEAAAAEQAA=</HashCode>
       <FileName>SList.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SList_Iterator&lt;Element&gt;">
-    <Position X="9.75" Y="0.5" Width="2.75" />
+    <Position X="6.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>EgAAEAAAgAAAJAAAAAAAEAAAAAAAAAAAAAggAAAAAAI=</HashCode>
       <FileName>SList_Iterator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student.CPP</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp">
+    <Position X="11.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgAAAAAAIgAAAAAAAAgAEAAAAAAAAAAAgAAAAQA=</HashCode>
+      <FileName>StudentApp.CPP</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
