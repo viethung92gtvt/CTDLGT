@@ -27,16 +27,22 @@ public:
 		void replace(Node<Element>* p, Element e);				// Thay the phan tu luu trong node do co dia chi luu trong p bang phan tu co gia tri e
 		Node<Element>* insertAfter(Node<Element>* p, Element e);// Chen them node sau node do p tro toi
 		void sort() {
-			Node<Element>* p = header;
-			Node<Element>* q;
-			while(p!=trailer){
-				 q = p->getNext();
-				while(q!=NULL){
-					if(p->getElem()>q->getElem()) {
-							Node<Element>*r = p;
-							Node<Element>*s = q;
-							r->setNext((s->getNext()));
-							
+			Node<Element> *end,*r,*p,*q,*temp;
+			for(end=NULL; end!=header->getNext();end=p)
+			{
+				for(r=p=header;p->getNext()!=end;r=p,p=p->getNext())
+				{
+					q = p->getNext();
+					if(p->getElem()>q->getElem()){
+						p->setNext(q->getNext());
+						q->setNext(p);
+						if(p!=header)
+							r->setNext(q);
+						else
+							header=q;
+						temp=p;
+						p=q;
+						q=temp;
 					}
 				}
 			}

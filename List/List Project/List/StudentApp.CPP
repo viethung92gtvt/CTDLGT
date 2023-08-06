@@ -60,6 +60,7 @@ void StudentApp::insertLast(){
 void StudentApp::sortByMSV(){
 	
 	list->sort();
+	cout<<"Sap xep sinh vien theo ma tang dan thanh cong.";
 	
 }
 //--------------------------------------------------------------------------------------

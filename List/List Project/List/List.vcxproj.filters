@@ -15,25 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd">
+    <ClCompile Include="..\..\DList_edit\dlist.cpp">
       <Filter>Source Files</Filter>
-    </None>
+    </ClCompile>
+    <ClCompile Include="..\..\DList_edit\dlist_iterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DList_edit\GiaiThua_dList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DList_edit\node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DList_edit\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Node.cpp">
+    <None Include="ClassDiagramSList.cd">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SList.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SList_Iterator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Student.CPP">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StudentApp.CPP">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    </None>
+    <None Include="ClassDiagramDList.cd" />
   </ItemGroup>
 </Project>

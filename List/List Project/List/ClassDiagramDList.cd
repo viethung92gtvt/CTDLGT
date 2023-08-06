@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="dlist&lt;T&gt;">
+    <Position X="7.25" Y="0.75" Width="1.75" />
+    <NestedTypes>
+      <Typedef Name="dlist&lt;T&gt;::iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\dlist.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="dlist&lt;T&gt;::reverse_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\dlist.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACECgBBAgAAAAKEIIAASAAAAAAAAAAEAAAAEAIA=</HashCode>
+      <FileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\dlist.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dlist_iterator&lt;T&gt;">
+    <Position X="9.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAQQAAAAQAAAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\dlist_iterator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dlist_reverse_iterator&lt;T&gt;">
+    <Position X="11.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQQAAAAQAAAAgAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\dlist_iterator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="node&lt;T&gt;">
+    <Position X="4.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QQQAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAABAAEIAAEQ=</HashCode>
+      <FileName>D:\Github\CTDLGT\CTDLGT\List\DList_edit\node.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

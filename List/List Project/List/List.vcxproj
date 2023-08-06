@@ -19,14 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <ClCompile Include="..\..\DList_edit\dlist.cpp" />
+    <ClCompile Include="..\..\DList_edit\dlist_iterator.cpp" />
+    <ClCompile Include="..\..\DList_edit\GiaiThua_dList.cpp" />
+    <ClCompile Include="..\..\DList_edit\node.cpp" />
+    <ClCompile Include="..\..\DList_edit\test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="SList.cpp" />
-    <ClCompile Include="SList_Iterator.cpp" />
-    <ClCompile Include="Student.CPP" />
-    <ClCompile Include="StudentApp.CPP" />
+    <None Include="ClassDiagramDList.cd" />
+    <None Include="ClassDiagramSList.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
